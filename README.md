@@ -6,7 +6,7 @@ A console-operated round for challenging user with information regarding built-i
 
 ## Getting Started
 
-1. **Fork** this project.  In your console(terminal)
+1. **Fork** this project on github.  In your console(terminal)
   * **run** this code:
   ```bash
   git clone git@github.com:percworld/flashcards.git
