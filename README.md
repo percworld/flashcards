@@ -6,7 +6,7 @@ A console-operated round for challenging user with information regarding built-i
 
 ## Getting Started
 
-1. **Fork** this project.  In your console(terminal)
+1. **Fork** this project on github.  In your console(terminal)
   * **run** this code:
   ```bash
   git clone git@github.com:percworld/flashcards.git
@@ -43,11 +43,14 @@ A console-operated round for challenging user with information regarding built-i
 
 #### 4. *Hit `Ctrl - C` at any point to exit.*
 
-#### 5. Begin another round by running
+#### 5. I you score an 'A', congratulations! Begin another round by running
 
 ```bash
 node index.js
 ```
+
+#### 6. However, if you have not scored above 90% it is time for you to give it another go.  You will be notified to "Try again until you get 90% correct!"
+
 ---
 ###  Link to this project's gitHub board: [Project Board](https://github.com/users/percworld/projects/2)
 ---

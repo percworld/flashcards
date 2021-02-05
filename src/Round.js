@@ -1,6 +1,6 @@
 
 const Turn = require('./Turn');
-//const Game = require('./Game');
+const util = require('./util');
 
 class Round {
   constructor(deck) {
@@ -29,12 +29,20 @@ class Round {
     return Math.round(percentage);
   }
 
+  determineChallengerPass() {
+    console.log("           **Try again until you get 90% correct!**");
+    this.turns = 0;
+    this.currentCard = this.deck[this.turns];
+    util.main(this);
+  }
+
   endRound() {
     const percentCorrect = this.calculatePercentCorrect();
     const message = `** Round over! ** You answered ${percentCorrect}% of the questions correctly!`
     console.log(message);
-    //const game = new Game();
-    //game.start();
+    if (percentCorrect < 90) {
+      this.determineChallengerPass();
+    }
     return message;
   }
 }

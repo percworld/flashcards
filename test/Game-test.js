@@ -25,7 +25,7 @@ describe('Game', function() {
     expect(game.currentRound).to.be.an('object');
   });
 
-  describe('start', function() {
+  describe.skip('start', function() {
 
     beforeEach('start a game', function() {
       game.start();
